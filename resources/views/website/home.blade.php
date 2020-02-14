@@ -74,7 +74,7 @@
                             Easy to Setup <br>
                         </p>
                         <h4>
-                            <a href="shared-hosting" class="btn btn-bg">Get Started</a>
+                            <a href="{{route('website.share')}}" class="btn btn-bg">Get Started</a>
                         </h4>
                     </section>
                 </div>
@@ -88,7 +88,7 @@
                             Pay as You go <br>
                         </p>
                         <h4>
-                            <a href="reseller-hosting" class="btn btn-bg">Get Started</a>
+                            <a href="{{route('website.resell')}}" class="btn btn-bg">Get Started</a>
                         </h4>
                     </section>
                 </div>
@@ -102,7 +102,7 @@
                             The Ultimate in Performance <br>
                         </p>
                         <h4>
-                            <a href="dedicated-servers" class="btn btn-bg">Get Started</a>
+                            <a href="{{route('website.dedicate')}}" class="btn btn-bg">Get Started</a>
                         </h4>
                     </section>
                 </div>
@@ -116,7 +116,7 @@
                             Scalable Resources
                         </p>
                         <h4>
-                            <a href="vps-hosting" class="btn btn-bg">Get Started</a>
+                            <a href="{{route('website.vps')}}" class="btn btn-bg">Get Started</a>
                         </h4>
                     </section>
                 </div>

@@ -21,4 +21,6 @@ Route::group(['namespace'=>'Website', 'as'=>'website.'], function (){
     Route::get('/domain-transfer','WebsiteController@transfer')->name('transfer');
     Route::get('/personal-domain','WebsiteController@personal')->name('personal');
     Route::get('/how-to-pay','WebsiteController@pay')->name('pay');
+    Route::get('/contact','WebsiteController@contact')->name('contact');
+    Route::get('/ssl-certificate','WebsiteController@ssl')->name('ssl');
 });

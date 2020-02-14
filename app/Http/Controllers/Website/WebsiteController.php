@@ -35,6 +35,11 @@ class WebsiteController extends Controller
     public function pay(){
         return view('website.pay');
     }
-
+    public function contact(){
+        return view('website.contact');
+    }
+    public function ssl(){
+        return view('website.ssl');
+    }
 
 }

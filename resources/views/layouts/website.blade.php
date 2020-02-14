@@ -70,7 +70,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="{{route('website.home')}}">Home <span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -108,13 +108,13 @@
                                             Security
                                         </a>
                                         <div class="dropdown-menu wow fadeIn" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="ssl-certificate">SSL Certificate</a>
+                                            <a class="dropdown-item" href="{{route('website.ssl')}}">SSL Certificate</a>
                                             <a class="dropdown-item" href="premium-dns">Premium DNS</a>
                                             <a class="dropdown-item" href="who-is">Whois Guard</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact">Contact</a>
+                                        <a class="nav-link" href="{{route('website.contact')}}">Contact</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="http://wehostafrica.com/Web"
@@ -204,13 +204,13 @@
                 <section class="container-fluid py-3 w3-hide-small">
                     <h6 class="font-weight-bold text-white pb-3">Hosting</h6>
                     <ul>
-                        <li><a href="shared-hosting"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Shared
+                        <li><a href="{{route('website.share')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Shared
                                 Hosting</a></li>
-                        <li><a href="dedicated-hosting"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                        <li><a href="{{route('website.dedicate')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
                                 Dedicated Hosting</a></li>
-                        <li><a href="reseller-hosting"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Reseller
+                        <li><a href="{{route('website.resell')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Reseller
                                 Hosting</a></li>
-                        <li><a href="vps-hosting"> <i class="text-primary fas fa-angle-right"></i> &nbsp; VPS
+                        <li><a href="{{route('website.vps')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; VPS
                                 Hosting</a></li>
                     </ul>
                 </section>
@@ -220,11 +220,11 @@
                 <section class="container-fluid py-3 w3-hide-small">
                     <h6 class="font-weight-bold text-white pb-3">Domain</h6>
                     <ul>
-                        <li><a href="domain-registration"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                        <li><a href="{{route('website.domain_reg')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
                                 Registration</a></li>
-                        <li><a href="domain-transfer"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                        <li><a href="{{route('website.transfer')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
                                 Transfer</a></li>
-                        <li><a href="personal-Domain"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Personal
+                        <li><a href="{{route('website.personal')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Personal
                                 Domain</a></li>
                         <li><a href="premium-dns"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Premium
                                 DNS</a></li>
@@ -244,7 +244,7 @@
                                 Knowledgebase</a></li>
                         <li><a href="clients/submitticket.php"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
                                 Submit Ticket</a></li>
-                        <li><a href="ssl-certificate"> <i class="text-primary fas fa-angle-right"></i> &nbsp; SSl
+                        <li><a href="{{route('website.ssl')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; SSl
                                 Certificate</a></li>
                     </ul>
                 </section>
