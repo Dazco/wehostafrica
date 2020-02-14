@@ -1,0 +1,42 @@
+/*mobi.css*/
+@media screen and (max-width: 600px) {
+  .w3-xxxlarge {
+    font-size: 30px!important;
+  }
+
+  .w3-large {
+    font-size: 15px!important;
+  }
+
+  .navbar {
+    background-color: #2980b9!important;
+    box-shadow: 0px 1px 0px rgba(254, 254, 254, 0.5);
+  }
+
+  .navbar-toggler {
+    font-size: 23px;
+    outline-color:  #2980b9!important;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar-toggler:active, .navbar-toggler:visited, .navbar-toggler:hover {
+    outline:  none!important;
+  }
+  .navbar-brand {
+    font-size: 20px!important;
+  }
+  .nav-item {
+    border-top: 1px groove rgba(255, 255, 255, 0.9);
+  }
+  .nav-link:hover {
+    background: #fff;
+    color: #2980b9!important;
+    font-weight: bold;
+    padding-left: 5px;
+    border-radius: 2px;
+  }
+  .navbar-nav {
+    padding-left: 0px!important;
+  }
+
+}
