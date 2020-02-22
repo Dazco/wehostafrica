@@ -1,17 +1,22 @@
 @extends('layouts.website')
 @section('title')
-    Payment Options | WehostAfrica.com - Best Web Hosting Provider in Africa
+    <title>
+        Payment Options | WehostAfrica.com - Best Web Hosting Provider in Africa
+    </title>
 @endsection
 @section('styles')
-    body {
-        background: url('/images/bg.jpg') no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
+    <style media="screen">
+        body {
+            background: url('/images/bg.jpg') no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
 @endsection
 @section('part-header')
     <div class="container wow fadeIn py-5" id="head_notez">
-        <h1 class="hh2 text-primary pt-2 font-weight-bold text-shadow wow fadeIn" data-wow-delay="1s">Payment Methods</h1>
+        <h1 class="hh2 text-primary pt-2 font-weight-bold text-shadow wow fadeIn" data-wow-delay="1s">Payment
+            Methods</h1>
         <h6 class="wow fadeIn" data-wow-delay="1s"> Pay from anywhere around the world to WeHostAfrica</h6>
 
     </div>
@@ -46,7 +51,8 @@
                         </section>
                     </div>
                     <div class="col-lg-3 col-md-4 w3-section">
-                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn" data-wow-delay="1s">
+                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn"
+                                 data-wow-delay="1s">
                             <img src="/images/fidelity.png" alt="Fidelity Bank" class="img-fluid w-50"> <br>
                             <hr class="border-warning d-inline-block p-0 text-center m-0" style="width: 80px;">
                             <p class="w3-medium pt-3 text-secondary">
@@ -60,7 +66,8 @@
                         </section>
                     </div>
                     <div class="col-lg-3 col-md-4 w3-section">
-                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn" data-wow-delay="1s">
+                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn"
+                                 data-wow-delay="1s">
                             <img src="/images/access.png" alt="Access Bank" class="img-fluid w-50"> <br>
                             <hr class="border-warning d-inline-block p-0 text-center m-0" style="width: 80px;">
                             <p class="w3-medium pt-3 text-secondary">
@@ -74,7 +81,8 @@
                         </section>
                     </div>
                     <div class="col-lg-3 col-md-4 w3-section">
-                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn" data-wow-delay="2s">
+                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn"
+                                 data-wow-delay="2s">
                             <img src="/images/zenith.png" alt="Zenith Bank" class="img-fluid w-50"> <br>
                             <hr class="border-warning d-inline-block p-0 text-center m-0" style="width: 80px;">
                             <p class="w3-medium pt-3 text-secondary">
@@ -103,17 +111,20 @@
                             <img src="images/paystack.png" alt="Paystack" class="img-fluid w-50"> <br>
                             <hr class="border-warning d-inline-block p-0 text-center m-0" style="width: 80px;">
                             <p class="w3-medium pt-3 text-secondary">
-                                You may make payment with your debit cards, online banking and USSD using the Rave payment option.
+                                You may make payment with your debit cards, online banking and USSD using the Rave
+                                payment option.
                             </p>
                         </section>
                     </div>
                     <!--  -->
                     <div class="col-md-4 col-sm-6">
-                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn" data-wow-delay="1s">
+                        <section class="container-fluid w3-section bg-white py-5 rounded text-center border wow fadeIn"
+                                 data-wow-delay="1s">
                             <img src="/images/quick.svg" alt="Paystack" class="img-fluid w-50"> <br>
                             <hr class="border-warning d-inline-block p-0 text-center m-0" style="width: 80px;">
                             <p class="w3-medium pt-2 text-secondary">
-                                You may make payment with your Visa, MasterCard and Verve cards debit cards using the QuickTeller payment option.
+                                You may make payment with your Visa, MasterCard and Verve cards debit cards using the
+                                QuickTeller payment option.
                             </p>
                         </section>
                     </div>

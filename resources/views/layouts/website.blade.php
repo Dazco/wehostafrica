@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title')</title>
-    <!-- Bootstrap -->
+@yield('title')
+<!-- Bootstrap -->
     <link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Font Awesome CSS-->
     <link href="{{url('css/fontawesome-all.min.css')}}" rel="stylesheet">
@@ -23,9 +23,7 @@
     <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <style media="screen">
-       @yield('styles')
-    </style>
+    @yield('styles')
 </head>
 <body>
 <header class="container-fluid px-0 " id="main_header">
@@ -40,7 +38,13 @@
                     </div>
                     <!--  -->
                     <div class="col-md-6 text-right w3-hide-small d-none d-sm-block" id="top_links">
-                        <a href="clients/register.php" class="d-inline-block py-1 pr-2">Sign Up</a>
+                        <a href="#" class="fab fa-facebook-f btn" target="_blank"></a>
+                        <a href="http://twitter.com/wehostafrica5" class="fab fa-twitter btn" target="_blank"></a>
+                        <a href="https://plus.google.com/113475739020926021601" class="fab fa-google-plus-g btn"
+                           target="_blank"></a>
+                        <a href="" class="fab fa-instagram btn border-right" target="_blank"></a>
+
+                        <a href="clients/register.php" class="d-inline-block ml-1 py-1 pr-2">Sign Up</a>
                         <a href="clients/clientarea.php"
                            class="d-inline-block py-1 px-2 bg-warning text-dark  rounded-bottom">Client area</a>
                     </div>
@@ -49,7 +53,7 @@
         </div>
         <!-- nav -->
         <div class="container-fluid bg-white wow fadeIn py-2" id="head_nav">
-            <div class="container p-0">
+            <div class="container-fluid p-0">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 w3-hide-small w3-hide-medium d-none d-sm-block">
                         <a href=""><img src="{{url('images/logo.png')}}" alt="WehostAfrica"
@@ -68,7 +72,7 @@
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto">
+                                <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="{{route('website.home')}}">Home <span class="sr-only">(current)</span></a>
                                     </li>
@@ -78,9 +82,12 @@
                                             Hosting
                                         </a>
                                         <div class="dropdown-menu wow fadeIn" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{route('website.share')}}">Shared Hosting</a>
-                                            <a class="dropdown-item" href="{{route('website.resell')}}">Reseller Hosting</a>
-                                            <a class="dropdown-item" href="{{route('website.dedicate')}}">Dedicated Hosting</a>
+                                            <a class="dropdown-item" href="{{route('website.share')}}">Shared
+                                                Hosting</a>
+                                            <a class="dropdown-item" href="{{route('website.resell')}}">Reseller
+                                                Hosting</a>
+                                            <a class="dropdown-item" href="{{route('website.dedicate')}}">Dedicated
+                                                Hosting</a>
                                             <a class="dropdown-item" href="{{route('website.vps')}}">VPS</a>
                                         </div>
                                     </li>
@@ -90,9 +97,11 @@
                                             Domain
                                         </a>
                                         <div class="dropdown-menu wow fadeIn" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{route('website.domain_reg')}}">Registration</a>
+                                            <a class="dropdown-item"
+                                               href="{{route('website.domain_reg')}}">Registration</a>
                                             <a class="dropdown-item" href="{{route('website.transfer')}}">Transfer</a>
-                                            <a class="dropdown-item" href="{{route('website.personal')}}">Personal Domain</a>
+                                            <a class="dropdown-item" href="{{route('website.personal')}}">Personal
+                                                Domain</a>
 
                                         </div>
                                     </li>
@@ -131,7 +140,7 @@
     </section>
 </header>
 
-    @yield('content')
+@yield('content')
 
 <!-- top footer -->
 <section class="container-fluid bg-primary pt-2 w3-hide-medium w3-hide-small">
@@ -189,28 +198,23 @@
 <!--  -->
 <footer class="container-fluid px-0 py-4">
     <section class="container py-3">
-        <div class="row">
-            <div class="col-md-4 col-lg-3">
-                <section class="container-fluid py-3 w3-hide-small w3-hide-medium">
-                    <img src="{{url('images/logo.jpeg')}}" alt="Logo" class="img-fluid rounded-circle" width="150"/>
-                    <p class="pt-4 text-left">
-                        We make registering, hosting, and managing domains for yourself or others easy and affordable,
-                        because the internet needs people.
-                    </p>
-                </section>
-            </div>
+        <div class="row d-flex align-items-center">
             <!--  -->
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <section class="container-fluid py-3 w3-hide-small">
                     <h6 class="font-weight-bold text-white pb-3">Hosting</h6>
                     <ul>
-                        <li><a href="{{route('website.share')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Shared
+                        <li><a href="{{route('website.share')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                                Shared
                                 Hosting</a></li>
-                        <li><a href="{{route('website.dedicate')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                        <li><a href="{{route('website.dedicate')}}"> <i class="text-primary fas fa-angle-right"></i>
+                                &nbsp;
                                 Dedicated Hosting</a></li>
-                        <li><a href="{{route('website.resell')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Reseller
+                        <li><a href="{{route('website.resell')}}"> <i class="text-primary fas fa-angle-right"></i>
+                                &nbsp; Reseller
                                 Hosting</a></li>
-                        <li><a href="{{route('website.vps')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; VPS
+                        <li><a href="{{route('website.vps')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                                VPS
                                 Hosting</a></li>
                     </ul>
                 </section>
@@ -220,11 +224,14 @@
                 <section class="container-fluid py-3 w3-hide-small">
                     <h6 class="font-weight-bold text-white pb-3">Domain</h6>
                     <ul>
-                        <li><a href="{{route('website.domain_reg')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                        <li><a href="{{route('website.domain_reg')}}"> <i class="text-primary fas fa-angle-right"></i>
+                                &nbsp;
                                 Registration</a></li>
-                        <li><a href="{{route('website.transfer')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                        <li><a href="{{route('website.transfer')}}"> <i class="text-primary fas fa-angle-right"></i>
+                                &nbsp;
                                 Transfer</a></li>
-                        <li><a href="{{route('website.personal')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Personal
+                        <li><a href="{{route('website.personal')}}"> <i class="text-primary fas fa-angle-right"></i>
+                                &nbsp; Personal
                                 Domain</a></li>
                         <li><a href="premium-dns"> <i class="text-primary fas fa-angle-right"></i> &nbsp; Premium
                                 DNS</a></li>
@@ -244,9 +251,19 @@
                                 Knowledgebase</a></li>
                         <li><a href="clients/submitticket.php"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
                                 Submit Ticket</a></li>
-                        <li><a href="{{route('website.ssl')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp; SSl
+                        <li><a href="{{route('website.ssl')}}"> <i class="text-primary fas fa-angle-right"></i> &nbsp;
+                                SSl
                                 Certificate</a></li>
                     </ul>
+                </section>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <section class="container-fluid py-3 w3-hide-small w3-hide-medium">
+                    <img src="{{url('images/logo.jpeg')}}" alt="Logo" class="img-fluid rounded-circle" width="150"/>
+                    <p class="pt-4 text-left">
+                        We make registering, hosting, and managing domains for yourself or others easy and affordable,
+                        because the internet needs people.
+                    </p>
                 </section>
             </div>
             <!--  -->
@@ -298,6 +315,7 @@
 <script src="{{url('js/bootstrap.min.js')}}"></script>
 <script src="{{url('js/easing.min.js')}}"></script>
 <script src="{{url('js/wow.min.js')}}"></script>
+@yield('scripts')
 <script src="{{url('js/custom.js')}}"></script>
 
 

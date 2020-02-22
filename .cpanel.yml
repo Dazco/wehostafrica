@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ifmoolfk/wehostafrica.ifmoa.org.ng/wehostafrica
+    - /bin/cp -R * $DEPLOYPATH
