@@ -40,10 +40,10 @@
                     <div class="col-md-6 text-right w3-hide-small d-none d-sm-block" id="top_links">
                         <a href="https://web.facebook.com/WehostAfrica" class="fab fa-facebook-f btn" target="_blank"></a>
                         <a href="https://twitter.com/wehostafricang" class="fab fa-twitter btn" target="_blank"></a>
-                        <a href="https://www.instagram.com/wehostafrica" class="fab fa-instagram btn border-right" target="_blank"></a>
+                        <a href="https://www.instagram.com/wehostafrica" class="fab fa-instagram btn" target="_blank"></a>
                         <a href="https://plus.google.com/113475739020926021601" class="fab fa-google-plus-g btn"
                            target="_blank"></a>
-                        <a href="https://www.linkedin.com/company/wehostafrica" class="fab fa-linkedin btn"
+                        <a href="https://www.linkedin.com/company/wehostafrica" class="fab fa-linkedin btn border-right"
                            target="_blank"></a>
 
                         <a href="clients/register.php" class="d-inline-block ml-1 py-1 pr-2">Sign Up</a>
@@ -302,11 +302,11 @@
                 <div class="container-fluid text-right py-2">
                     <a href="https://web.facebook.com/WehostAfrica" class="fab fa-facebook-f btn" target="_blank"></a>
                     <a href="https://twitter.com/wehostafricang" class="fab fa-twitter btn" target="_blank"></a>
+                    <a href="https://www.instagram.com/wehostafrica" class="fab fa-instagram btn" target="_blank"></a>
                     <a href="https://plus.google.com/113475739020926021601" class="fab fa-google-plus-g btn"
                        target="_blank"></a>
                     <a href="https://www.linkedin.com/company/wehostafrica" class="fab fa-linkedin btn"
                        target="_blank"></a>
-                    <a href="https://www.instagram.com/wehostafrica" class="fab fa-instagram btn" target="_blank"></a>
                 </div>
             </div>
         </div>
