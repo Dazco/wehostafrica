@@ -17,6 +17,8 @@ Route::group(['namespace'=>'Website', 'as'=>'website.'], function (){
     Route::get('/reseller-hosting','WebsiteController@resell')->name('resell');
     Route::get('/dedicated-hosting','WebsiteController@dedicate')->name('dedicate');
     Route::get('/vps-hosting','WebsiteController@vps')->name('vps');
+    Route::get('/email-hosting','WebsiteController@email')->name('email');
+    Route::get('/wordpress-hosting','WebsiteController@wordpress')->name('wordpress');
     Route::get('/domain-registration','WebsiteController@domain_reg')->name('domain_reg');
     Route::get('/domain-transfer','WebsiteController@transfer')->name('transfer');
     Route::get('/personal-domain','WebsiteController@personal')->name('personal');

@@ -14,6 +14,12 @@ class WebsiteController extends Controller
     public function share(){
         return view('website.share');
     }
+    public function email(){
+        return view('website.email');
+    }
+    public function wordpress(){
+        return view('website.wordpress');
+    }
     public function resell(){
         return view('website.resell');
     }
