@@ -26,3 +26,31 @@ Route::group(['namespace'=>'Website', 'as'=>'website.'], function (){
     Route::get('/contact','WebsiteController@contact')->name('contact');
     Route::get('/ssl-certificate','WebsiteController@ssl')->name('ssl');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/login',function(){
+
+    return view('admin.login');
+})->name('loginpage');
+
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::resource('/admin/post','AdminPostController');
+    Route::resource('/admin/category','AdminCategoryController');
+
+    Route::get('/admin/home',function(){
+        return view('admin.home');
+    });
+});
+
+Route::group(['as'=>'blog.'],function(){
+    Route::get('blog/index','blogController@index')->name('index');
+    Route::get('blog/{id}/post','blogController@post')->name('post');
+    Route::get('blog/{id}/category','blogController@category')->name('category');
+    Route::get('hithere',function(){
+        return "i must finish it today";
+    });
+
+});
